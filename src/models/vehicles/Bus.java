@@ -1,8 +1,8 @@
 package models.vehicles;
 
-import models.vehicles.interfaces.Chargeable;
+import models.vehicles.interfaces.Fine;
 
-public class Bus extends Vehicle implements Chargeable {
+public class Bus extends Vehicle implements Fine {
     public Bus() {
         super(VehicleSize.BIG, 70);
     }

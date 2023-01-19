@@ -25,8 +25,4 @@ public class Train implements TrainLoading {
         this.profit += vehicle.getPayAmount();
         this.currentCapacity--;
     }
-
-    public int getProfit() {
-        return profit;
-    }
 }

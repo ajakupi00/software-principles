@@ -1,5 +1,5 @@
 package models.vehicles.interfaces;
 
-public interface Chargeable {
+public interface Fine {
     int payTerminal();
 }
