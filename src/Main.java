@@ -5,8 +5,13 @@ import models.vehicles.*;
 public class Main {
 
     public static void main(String[] args) {
-        Terminal smallTrainTerminal = new Terminal(TrainSize.SMALL);
-        Terminal bigTrainTerminal = new Terminal(TrainSize.BIG);
+        Terminal smallTrainTerminal = new Terminal.TerminalBuilder(TrainSize.SMALL)
+                .terminalName("Small train terminal")
+                .build();
+
+        Terminal bigTrainTerminal = new Terminal.TerminalBuilder(TrainSize.BIG)
+                .terminalName("Big train terminal")
+                .build();
 
         TerminalWorker basicWorker = new TerminalWorker("Basic Worker");
         TerminalWorker advancedWorker = new TerminalWorker("Advanced Worker", 11);

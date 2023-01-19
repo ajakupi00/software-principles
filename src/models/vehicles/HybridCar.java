@@ -18,11 +18,11 @@ public class HybridCar extends Vehicle implements Rechargeable {
     @Override
     public void rechargeBattery() {
         if(this.batteryPercentage >= 10){
-            System.err.println("No need for charging the battery because battery percentage is " + this.batteryPercentage);
+            System.err.println("No need for charging the battery because battery percentage is " + this.batteryPercentage + "\n");
         }else{
             System.err.println("Recharging the car.");
             this.batteryPercentage = 100;
-            System.err.println("Car fully charged.");
+            System.err.println("Car fully charged.\n");
         }
     }
 

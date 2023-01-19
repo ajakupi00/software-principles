@@ -12,7 +12,7 @@ public abstract class Vehicle implements Fine, Refuelable {
     public Vehicle(final VehicleSize vehicleSize, final int payAmount){
         this.vehicleSize = vehicleSize;
         this.payAmount = payAmount;
-        this.gasPercentage = (int) ((Math.random() * (100 - 1)) + 1);
+        this.gasPercentage = (int) (Math.random() * 100);
     }
 
     public VehicleSize getVehicleSize() {
@@ -30,11 +30,11 @@ public abstract class Vehicle implements Fine, Refuelable {
     @Override
     public void refill() {
         if(this.getGasPercentage() >= 10){
-            System.err.println("No need for gas, gas percentage is " + this.getGasPercentage());
+            System.err.println("No need for gas, gas percentage is " + this.getGasPercentage() + "\n");
         }else{
-            System.err.println("Refilling vehicle gas.");
+            System.err.println("Refilling vehicle gas.\n");
             this.gasPercentage = 100;
-            System.err.println("Vehicle refueled.");
+            System.err.println("Vehicle refueled.\n");
         }
     }
 }

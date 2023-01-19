@@ -32,6 +32,6 @@ public class TerminalWorker implements Park, Display {
 
     @Override
     public void displayProfit() {
-        System.err.println(this.name + " has earned " + this.salary + " kn.");
+        System.err.println(this.name + " has earned " + this.salary + " kn.\n");
     }
 }
