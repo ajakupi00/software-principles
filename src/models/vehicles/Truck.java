@@ -12,4 +12,10 @@ public class Truck extends Vehicle implements Fine {
     public int payTerminal() {
         return this.getPayAmount();
     }
+
+
+    @Override
+    public String toString() {
+        return "Truck";
+    }
 }

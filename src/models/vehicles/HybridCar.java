@@ -25,4 +25,10 @@ public class HybridCar extends Vehicle implements Rechargeable {
             System.err.println("Car fully charged.");
         }
     }
+
+
+    @Override
+    public String toString() {
+        return "HybridCar";
+    }
 }

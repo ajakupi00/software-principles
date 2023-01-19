@@ -11,4 +11,9 @@ public class Van extends Vehicle {
     public int payTerminal() {
         return this.getPayAmount();
     }
+
+    @Override
+    public String toString() {
+        return "Van";
+    }
 }

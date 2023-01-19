@@ -25,4 +25,23 @@ public class Train implements TrainLoading {
         this.profit += vehicle.getPayAmount();
         this.currentCapacity--;
     }
+
+    public int getProfit() {
+        return profit;
+    }
+
+    @Override
+    public String toString() {
+        switch (this.trainSize) {
+            case BIG -> {
+                return "Big train";
+            }
+            case SMALL -> {
+                return "Small train";
+            }
+            default -> {
+                return "Train";
+            }
+        }
+    }
 }
