@@ -264,10 +264,10 @@ public class CEOSingleton {
 ```
 
 > **Zašto bi koristili Singleton pattern?**
-Singleton pattern koristimo kada želimo osigurati da postoji samo jedna instanca objekta.
-Npr. ako postoji CEO klasa, koja ne implementira Singleton pattern onda možemo stvarati “beskonačno” instanci te klase, što nema smisla jer bi trebao postojati samo jedan CEO.
-
-**Singletonova najvažnija beneficija je da je resource friendly,** to znači da ****nećemo trošiti resurse na stvaranju novih instanci objekta kada nam neće trebat.
+>Singleton pattern koristimo kada želimo osigurati da postoji samo jedna instanca objekta.
+>Npr. ako postoji CEO klasa, koja ne implementira Singleton pattern onda možemo stvarati “beskonačno” instanci te klase, što nema smisla jer bi trebao postojati samo >jedan CEO.
+>
+>**Singletonova najvažnija beneficija je da je resource friendly,** to znači da ****nećemo trošiti resurse na stvaranju novih instanci objekta kada nam neće trebat.
 > 
 
 ## Factory method
@@ -305,8 +305,8 @@ public class SingerFactory {
 Factory method design pattern koristimo da bi stvorili objekte bez da moramo specificirati klasu objekta koju želimo stvoriti. Umjesto toga, stvaramo “factory” koji se brina o stvaranju objekta za nas.
 >
 > Npr. Ako imamo interface *****Sing***** koji ima metodu *******sing()******* i stvorili smo klase koji naslijeđuju taj interface, factory nam omogućava da onda stvorimo instance ************OperaSinger************ ili *******Rapper******* jer factory kao parametar za stvaranje ********Singera******** prima interface.
-
-Ovo nam omogućava promjenu klase objekta koju želimo stvoriti bez da mijenjamo kod.
+>
+>Ovo nam omogućava promjenu klase objekta koju želimo stvoriti bez da mijenjamo kod.
 > 
 
 ## Builder
@@ -408,8 +408,8 @@ public class Car extends Vehicle{
 
 > **************************Zašto bi htjeli koristiti Prototype design pattern?**************************
 Zbog ovog design patterna puno je lakše i brže kopirati i u odnosnu na kopirani objekt stvoriti novi.
-
-******************************************************************Zašto bi htjeli kopirati objekt?******************************************************************
+>
+>******************************************************************Zašto bi htjeli kopirati objekt?******************************************************************
 > 
 > - Možemo stvoriti kopiju bez da modificiramo orginalni objekt
 > - Kloniranje objekta košta puno manje nego stvaranje novog objekta
@@ -444,9 +444,9 @@ public class RectangleAdapter implements Shape{
 ```
 
 > ********Zašto želimo koristiti Adapter design pattern?********
-Adapter je kao prvo strukturalni design pattern koji nam pomaže da objekt prilagodimo da funkcionira sa naizgled nekompatibilnim objektima.
-
-Nesvjesno stalno koristimo adapter design pattern u svakodnevnom programskom kodu: 
+>Adapter je kao prvo strukturalni design pattern koji nam pomaže da objekt prilagodimo da funkcionira sa naizgled nekompatibilnim objektima.
+>
+>Nesvjesno stalno koristimo adapter design pattern u svakodnevnom programskom kodu: 
 **********************************************Array.asList(), 
 InputStreamReader(InputStream) →********************************************** vraća Reader objekt
 > 
@@ -490,9 +490,9 @@ public class HamDecorator extends PizzaDecorator {
 
 > **************************************************************************Zašto želimo koristiti Decorator design pattern?**************************************************************************
 Decorator design pattern nam omogućava dodavanje novog ponašanje objektima na način da ih wrappamo sa objektima koje nazivamo dekorator.
-
-Npr. što ako želimo dodati ponašanje (neku metodu) za klasu ************************ArrayList?************************
-Ne bi bilo pametno dodavati kod na klasu koju su pisali kvalificirani programeri godinama, već možemo napraviti naš dekorator na postojeću klasu.
+>
+>Npr. što ako želimo dodati ponašanje (neku metodu) za klasu ************************ArrayList?************************
+>Ne bi bilo pametno dodavati kod na klasu koju su pisali kvalificirani programeri godinama, već možemo napraviti naš dekorator na postojeću klasu.
 > 
 
 ## Observer
@@ -545,5 +545,5 @@ public class Investor implements Observer {
 ```
 
 > **********************************************************************************************Zašto želimo korisiti Observer design pattern?**********************************************************************************************
-Observer design pattern je prilično čest u svakodnevnici, pogotovo u GUI komponentama gdje se često pozivaju ****************************EventListener**************************** kada želimo slušati na odgovor na klik na gumb.
+> Observer design pattern je prilično čest u svakodnevnici, pogotovo u GUI komponentama gdje se često pozivaju ****************************EventListener**************************** kada želimo slušati na odgovor na klik na gumb.
 >
