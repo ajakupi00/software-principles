@@ -9,7 +9,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TerminalWorkerTest {
+
+public class TrainAndWorkerTest {
     private static Worker basicWorker;
     private static Terminal smallTrainTerminal;
     private static Terminal bigTrainTerminal;
