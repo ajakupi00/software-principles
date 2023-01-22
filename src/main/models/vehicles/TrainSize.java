@@ -1,6 +1,5 @@
 package main.models.vehicles;
 
-
 public enum TrainSize{
     BIG(6, VehicleSize.BIG),
     SMALL(8, VehicleSize.SMALL);
