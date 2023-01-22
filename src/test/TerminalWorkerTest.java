@@ -16,7 +16,7 @@ public class TerminalWorkerTest {
     private static Vehicle bus;
 
     @BeforeAll
-    public static void initWorker(){
+    public static void init(){
         basicWorker = new BasicWorker("Basic Worker");
         smallTrainTerminal = new Terminal.TerminalBuilder(TrainSize.SMALL)
                 .terminalName("Small train terminal")
