@@ -5,15 +5,12 @@ import main.models.terminal.interfaces.Park;
 import main.models.vehicles.HybridCar;
 import main.models.vehicles.Vehicle;
 
-public class TerminalWorker implements Park, Display {
+public abstract class Worker implements Park, Display {
     private final String name;
-    private double cardPercentage = 10.0;
+    private final double cardPercentage;
     private double salary = 0;
 
-    public TerminalWorker(final String name){
-        this.name = name;
-    }
-    public TerminalWorker(final String name, final double cardPercentage){
+    public Worker(final String name, double cardPercentage){
         this.name = name;
         this.cardPercentage = cardPercentage;
     }

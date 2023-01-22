@@ -1,7 +1,9 @@
 package main;
 
+import main.models.terminal.AdvancedWorker;
 import main.models.terminal.Terminal;
-import main.models.terminal.TerminalWorker;
+import main.models.terminal.BasicWorker;
+import main.models.terminal.Worker;
 import main.models.vehicles.*;
 
 public class Main {
@@ -15,8 +17,8 @@ public class Main {
                 .terminalName("Big train terminal")
                 .build();
 
-        TerminalWorker basicWorker = new TerminalWorker("Basic Worker");
-        TerminalWorker advancedWorker = new TerminalWorker("Advanced Worker", 11);
+        Worker basicWorker = new BasicWorker("Basic Worker");
+        Worker advancedWorker = new AdvancedWorker("Advanced Worker");
 
         Vehicle car = new HybridCar();
         Vehicle van = new Van();
